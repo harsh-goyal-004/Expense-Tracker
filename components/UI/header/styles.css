@@ -66,6 +66,7 @@
   font-weight: 500;
   display: flex;
   justify-content: flex-start;
+  background-color: #fff;
   align-items: start;
   border-left: 1px solid #00000029;
   box-shadow: rgba(0, 0, 0, 0.314) 0px 5px 15px;

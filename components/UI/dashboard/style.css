@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  z-index: 1000;
+}
+
+main {
+  margin-top: 14vh;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+/* Stats */
+
+.page-title {
+  padding: 4vh;
+  font-weight: 500;
+  color: navy;
+  font-size: x-large;
+}
+
+.stats {
+  display: flex;
+  padding: 2vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.mon-income,
+.mon-expenses,
+.rem-budget {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  width: 25vw;
+  height: 25vh;
+  border-radius: 5px;
+}
+
+.stats-heading {
+  display: flex;
+  align-items: self-end;
+  height: 20%;
+  gap: 2px;
+  /* justify-content: space-between; */
+}
+
+.stats-heading p {
+  font-size: larger;
+  color: navy;
+  font-weight: 500;
+}
+
+.stats-heading span {
+  align-self: center;
+  font-size: 14px;
+  color: grey;
+}
+
+.stats-heading i {
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  font-size: larger;
+}
+
+.value {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 80%;
+  gap: 6px;
+}
+
+.icon-container {
+  background-color: rgba(128, 0, 128, 0.157);
+  height: 65%;
+  width: 22%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container i {
+  font-size: xx-large;
+  color: #1c23f7;
+}
+
+.value p {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  color: #012970;
+  font-weight: 500;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-top: 10vh;
+  }
+
+  /* stats */
+
+  .stats {
+    gap: 5vh;
+    margin: 0;
+  }
+
+  .mon-income,
+  .mon-expenses,
+  .rem-budget {
+    width: 100vw;
+    height: 22vh;
+  }
+
+  .icon-container {
+    background-color: rgba(128, 0, 128, 0.157);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin-top: 10vh;
+  }
+
+  /* stats */
+
+  .stats {
+    gap: 10vw;
+  }
+
+  .mon-income,
+  .mon-expenses,
+  .rem-budget {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 10vh;
+  }
+
+  /* stats */
+
+  .stats {
+    gap: 5vw;
+  }
+
+  .mon-income,
+  .mon-expenses,
+  .rem-budget {
+    width: 40vw;
+    height: 16vh;
+  }
+
+  .icon-container {
+    background-color: rgba(128, 0, 128, 0.157);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    margin-top: 10vh;
+  }
+
+  /* stats */
+
+  .stats {
+    gap: 2vw;
+  }
+
+  .mon-income,
+  .mon-expenses,
+  .rem-budget {
+    width: 27vw;
+    height: 25vh;
+  }
+
+  .icon-container {
+    background-color: rgba(128, 0, 128, 0.157);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
