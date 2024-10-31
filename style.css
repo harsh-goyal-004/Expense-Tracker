@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "san-serif";
+}
+
+header {
+  background-color: #fff;
+  top: 0%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 2.5vw;
+  font-weight: 600;
+  height: 8vh;
+  color: navy;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 1.5px 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 8vh;
+  height: 85vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: blur(0.5px);
+  opacity: 0;
+  transition: opacity 0.7s ease-in;
+}
+
+.carousel {
+  display: flex;
+}
+
+.hero-image img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.get-started {
+  z-index: 100;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.get-started p {
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 2vw;
+  font-weight: 900;
+  color: #2409f4fd;
+  background-color: #ffffffe6;
+}
+
+.get-started span {
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #fff;
+  background-color: #25232352;
+}
+
+.get-started a {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: darkblue;
+  padding: 1vw;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  font-size: 1.5vw;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 140vh;
+  margin: 2em;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  height: auto;
+  border: 2px solid #000;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.card i {
+  font-size: 37px;
+  color: red;
+}
+
+.card span {
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 18px;
+  word-spacing: 3px;
+  letter-spacing: 0.8px;
+  color: rgb(79, 76, 76);
+  padding: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 1170px) {
+  .card {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    margin: 15px 5px 15px 5px;
+  }
+
+  .hero-image {
+    height: 40vh;
+  }
+
+  .get-started {
+    gap: 20px;
+  }
+
+  .get-started p {
+    font-size: 18px;
+  }
+
+  .get-started a {
+    font-size: 18px;
+  }
+}
