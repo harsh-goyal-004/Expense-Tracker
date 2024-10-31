@@ -124,6 +124,20 @@
   .left-side {
     font-size: 1.3rem;
   }
+
+  .vertical-header {
+    width: 40vw;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .vertical-header {
+    width: 40vw;
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -135,17 +149,6 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .left-side {
-    gap: 5px;
-    margin-left: -10%;
-  }
-
-  .right-side {
-    margin-right: -5%;
-  }
-}
-
 @media only screen and (max-width: 920px) {
   .left-side {
     gap: 5px;
@@ -154,5 +157,16 @@
 
   .right-side {
     margin-right: -8%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .left-side {
+    gap: 5px;
+    margin-left: -10%;
+  }
+
+  .right-side {
+    margin-right: -5%;
   }
 }
