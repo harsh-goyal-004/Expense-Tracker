@@ -12,7 +12,7 @@ header {
 main {
   margin-top: 14vh;
   background-color: aliceblue;
-  height: 100vh;
+  height: 150vh;
 }
 
 /* Stats */
@@ -102,6 +102,49 @@ main {
   font-weight: 500;
 }
 
+.recent-expenses {
+  display: flex;
+  padding: 2vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10vh;
+  background-color: #fff;
+  margin: 2vw;
+  position: relative;
+}
+
+.recent-expenses h2 {
+  color: #1c23f7;
+}
+
+.recent-expenses i {
+  position: absolute;
+  right: 2%;
+  font-size: 45px;
+  top: 1%;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(91, 97, 97, 0.104);
+}
+
 /* Responsive CSS */
 
 @media only screen and (max-width: 600px) {
@@ -131,6 +174,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Recent Expenses */
+
+  .class {
+    margin-top: 10vh;
+  }
+
+  .table-responsive {
+    padding-left: 100px;
   }
 }
 
@@ -167,13 +220,13 @@ main {
   .mon-expenses,
   .rem-budget {
     width: 40vw;
-    height: 16vh;
+    height: 25vh;
   }
 
   .icon-container {
     background-color: rgba(128, 0, 128, 0.157);
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
